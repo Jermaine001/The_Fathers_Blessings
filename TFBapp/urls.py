@@ -1,8 +1,10 @@
 from django.urls import path
 from  .views import (
-    index
+    index,
+    gallery
 )
 
 urlpatterns = [
-    path('', index,  name='index')
+    path('', index,  name='index'),
+    path('gallery/', gallery, name='gallery')
 ]
